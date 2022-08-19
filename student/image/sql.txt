@@ -1,0 +1,21 @@
+CREATE TABLE Persons (
+    Personid int NOT NULL AUTO_INCREMENT,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (Personid)
+); 
+
+
+#################### change mysql password
+
+mysql -u root mysql
+FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'NEW_PASSWORD';
+FLUSH PRIVILEGES;
+quit
+
+#################################
+
+
+SELECT DISTINCT `stu_id` FROM book_issue
